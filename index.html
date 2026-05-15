@@ -73,7 +73,6 @@ body {
   line-height: 1.55;
   min-height: 100vh;
   overflow-x: hidden;
-  /* Grain texture overlay */
   background-image: url('memory/brand-handoff/design_handoff_faly_brand_system/assets/texture-grain.svg');
   background-repeat: repeat;
   background-size: 200px;
@@ -134,6 +133,16 @@ header {
   font-family: var(--font-mono);
   font-size: 11px;
   color: var(--fg-muted);
+}
+
+.sync-badge {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--fg-muted);
+  background: var(--bg-deep);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  padding: 3px 10px;
 }
 
 /* ── Buttons ─────────────────────────────────────────────── */
@@ -436,6 +445,7 @@ main {
 }
 
 .kpi-delta.down { color: var(--faly-danger); }
+.kpi-delta.muted { color: var(--fg-muted); }
 .kpi.accent .kpi-delta { color: var(--faly-ocre-soft); }
 
 /* ── Review queue ────────────────────────────────────────── */
@@ -513,9 +523,7 @@ main {
   color: var(--fg-muted);
 }
 
-.signal-score {
-  display: flex; gap: 2px;
-}
+.signal-score { display: flex; gap: 2px; }
 
 .score-pip {
   width: 14px; height: 4px;
@@ -602,54 +610,6 @@ main {
   color: var(--faly-success);
 }
 
-/* ── Schedule ────────────────────────────────────────────── */
-.schedule-row {
-  display: flex;
-  gap: 14px;
-  align-items: center;
-  padding: 12px 0;
-  border-bottom: 1px solid var(--border);
-}
-
-.schedule-row:first-child { padding-top: 0; }
-.schedule-row:last-child  { border-bottom: none; padding-bottom: 0; }
-
-.schedule-time {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  color: var(--accent);
-  min-width: 42px;
-  text-align: right;
-  font-weight: 500;
-}
-
-.schedule-line {
-  width: 2px;
-  height: 34px;
-  border-radius: 1px;
-  background: var(--border);
-  flex-shrink: 0;
-}
-
-.schedule-line.live {
-  background: var(--faly-warning);
-  box-shadow: 0 0 6px rgba(199,122,26,.4);
-}
-
-.schedule-name {
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--fg);
-  font-family: var(--font-sans);
-  line-height: 1.3;
-}
-
-.schedule-canal {
-  font-family: var(--font-mono);
-  font-size: 10px;
-  color: var(--fg-muted);
-}
-
 /* ── Agent health grid ───────────────────────────────────── */
 .health-grid {
   display: grid;
@@ -692,10 +652,17 @@ main {
   margin-left: auto;
 }
 
-/* ── Divider ─────────────────────────────────────────────── */
-.rule { border: 0; border-top: 1px solid var(--border); margin: 8px 0 32px; }
+/* ── Empty state ─────────────────────────────────────────── */
+.empty-state {
+  text-align: center;
+  padding: 32px 16px;
+  color: var(--fg-muted);
+  font-size: 13px;
+  font-family: var(--font-sans);
+}
 
-/* ── Section ─────────────────────────────────────────────── */
+/* ── Divider / Section ───────────────────────────────────── */
+.rule { border: 0; border-top: 1px solid var(--border); margin: 8px 0 32px; }
 .section { margin-bottom: 40px; }
 
 /* ── Footer ──────────────────────────────────────────────── */
@@ -721,6 +688,7 @@ footer {
   .pipeline { flex-direction: column; }
   .pipe-step:not(:last-child) { border-right: none; border-bottom: 1px solid var(--border); }
   .page-head { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .header-right .sync-badge { display: none; }
 }
 </style>
 </head>
@@ -736,6 +704,7 @@ footer {
     <span class="logo-context">AI Marketing Pod · faly</span>
   </div>
   <div class="header-right">
+    <span class="sync-badge" id="sync-badge">chargement…</span>
     <span class="header-time" id="live-time">—</span>
     <button class="btn btn-ghost btn-sm" onclick="showDirect()">
       <i class="ph ph-pencil-simple"></i> Direct Post
@@ -752,27 +721,27 @@ footer {
   <!-- Page header -->
   <div class="page-head">
     <div>
-      <div class="page-eyebrow">Tableau de bord · 15 mai 2026</div>
+      <div class="page-eyebrow" id="page-date">Tableau de bord</div>
       <h1 class="page-title"><em>Pipeline</em> <strong>marketing</strong></h1>
-      <p class="page-sub">7 agents · veille temps réel · validation humaine</p>
+      <p class="page-sub">8 agents · veille temps réel · validation humaine</p>
     </div>
     <div style="display:flex;gap:8px;align-items:center">
-      <span class="chip chip-ok"><span class="chip-dot"></span>Système opérationnel</span>
+      <span class="chip chip-ok" id="system-status"><span class="chip-dot"></span>Système opérationnel</span>
     </div>
   </div>
 
-  <!-- Alert bar — run en cours -->
-  <div class="alert-bar">
+  <!-- Alert bar -->
+  <div id="alert-bar" class="alert-bar" style="display:none">
     <div class="alert-info">
-      <div class="alert-title">
+      <div class="alert-title" id="alert-title">
         <i class="ph ph-clock" style="color:var(--faly-warning)"></i>
-        Copywriter — en attente de validation
+        En attente de validation
       </div>
-      <div class="alert-sub">Lancé il y a 14 min · source: human_direct · canal: linkedin</div>
+      <div class="alert-sub" id="alert-sub"></div>
     </div>
     <div class="alert-actions">
-      <button class="btn btn-ghost btn-sm" onclick="openReview('copy')">
-        <i class="ph ph-eye"></i> Voir le copy
+      <button class="btn btn-ghost btn-sm" id="alert-view-btn" onclick="openReview('copy')">
+        <i class="ph ph-eye"></i> Voir
       </button>
       <button class="btn btn-primary btn-sm" onclick="approveFromBar()">
         <i class="ph ph-check"></i> Approuver
@@ -783,66 +752,33 @@ footer {
   <!-- Pipeline -->
   <div class="section">
     <div class="section-eyebrow">Pipeline · état courant</div>
-    <div class="pipeline">
-      <div class="pipe-step done">
-        <span class="pipe-name">Veilleur</span>
-        <span class="pipe-meta">reddit · trends24</span>
-        <span class="chip chip-done"><span class="chip-dot"></span>Fait</span>
-      </div>
-      <div class="pipe-step done">
-        <span class="pipe-name">Stratège</span>
-        <span class="pipe-meta">brief généré</span>
-        <span class="chip chip-done"><span class="chip-dot"></span>Fait</span>
-      </div>
-      <div class="pipe-step done">
-        <span class="pipe-name">Copywriter</span>
-        <span class="pipe-meta">angle A + B</span>
-        <span class="chip chip-done"><span class="chip-dot"></span>Fait</span>
-      </div>
-      <div class="pipe-step review">
-        <span class="pipe-name">Review copy</span>
-        <span class="pipe-meta">en attente</span>
-        <span class="chip chip-review"><span class="chip-dot"></span>Review</span>
-      </div>
-      <div class="pipe-step pending">
-        <span class="pipe-name">CriticCopy</span>
-        <span class="pipe-meta">gate qualité</span>
-        <span class="chip chip-pending"><span class="chip-dot"></span>En attente</span>
-      </div>
-      <div class="pipe-step pending">
-        <span class="pipe-name">Designer</span>
-        <span class="pipe-meta">visuels A/B</span>
-        <span class="chip chip-pending"><span class="chip-dot"></span>En attente</span>
-      </div>
-      <div class="pipe-step pending">
-        <span class="pipe-name">Publisher</span>
-        <span class="pipe-meta">publication</span>
-        <span class="chip chip-pending"><span class="chip-dot"></span>En attente</span>
-      </div>
+    <div class="pipeline" id="pipe-steps">
+      <!-- rendered by JS -->
+      <div class="pipe-step pending"><span class="pipe-name">Veilleur</span><span class="pipe-meta">—</span><span class="chip chip-pending"><span class="chip-dot"></span>—</span></div>
     </div>
   </div>
 
   <!-- KPIs -->
   <div class="grid-4 section">
     <div class="kpi accent">
-      <div class="kpi-label">CTR moyen</div>
-      <div class="kpi-value">4.2%</div>
-      <div class="kpi-delta">↑ +1.1% vs mois passé</div>
-    </div>
-    <div class="kpi">
-      <div class="kpi-label">Leads / semaine</div>
-      <div class="kpi-value">17</div>
-      <div class="kpi-delta">↑ objectif : 20</div>
-    </div>
-    <div class="kpi">
       <div class="kpi-label">Posts publiés</div>
-      <div class="kpi-value">34</div>
-      <div class="kpi-delta">↑ ce mois</div>
+      <div class="kpi-value" id="kpi-posts-val">—</div>
+      <div class="kpi-delta" id="kpi-posts-delta">ce mois</div>
     </div>
     <div class="kpi">
-      <div class="kpi-label">Score qualité</div>
-      <div class="kpi-value">78</div>
-      <div class="kpi-delta down">↓ objectif : 85</div>
+      <div class="kpi-label">Score qualité moy.</div>
+      <div class="kpi-value" id="kpi-score-val">—</div>
+      <div class="kpi-delta muted" id="kpi-score-delta">objectif : 85</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">En attente review</div>
+      <div class="kpi-value" id="kpi-review-val">—</div>
+      <div class="kpi-delta muted" id="kpi-review-delta">validations</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Campagnes actives</div>
+      <div class="kpi-value" id="kpi-campagnes-val">—</div>
+      <div class="kpi-delta muted" id="kpi-campagnes-delta">total pipeline</div>
     </div>
   </div>
 
@@ -851,93 +787,15 @@ footer {
 
     <div class="card">
       <div class="card-title">Validations en attente</div>
-
-      <div class="review-row">
-        <div class="review-info">
-          <div class="review-name">Copy — « 5 erreurs cold email B2B »</div>
-          <div class="review-meta">Angle A + B · linkedin · il y a 14 min</div>
-        </div>
-        <div class="review-actions">
-          <button class="btn btn-approve btn-sm" onclick="approveItem(this)">
-            <i class="ph ph-check"></i> Approuver
-          </button>
-          <button class="btn btn-edit btn-sm" onclick="modifyItem(this,'copy')">
-            <i class="ph ph-pencil-simple"></i> Modifier
-          </button>
-        </div>
-      </div>
-
-      <div class="review-row">
-        <div class="review-info">
-          <div class="review-name">Visuel — Carousel outreach B2B</div>
-          <div class="review-meta">Angle A · linkedin · hier à 18h32</div>
-        </div>
-        <div class="review-actions">
-          <button class="btn btn-approve btn-sm" onclick="approveItem(this)">
-            <i class="ph ph-check"></i> Approuver
-          </button>
-          <button class="btn btn-edit btn-sm" onclick="modifyItem(this,'visual')">
-            <i class="ph ph-pencil-simple"></i> Modifier
-          </button>
-        </div>
-      </div>
-
-      <div class="review-row" style="opacity:.4">
-        <div class="review-info">
-          <div class="review-name">Copy — Thread growth hacking</div>
-          <div class="review-meta">En attente Copywriter · x · —</div>
-        </div>
-        <div class="review-actions">
-          <button class="btn btn-edit btn-sm" disabled style="cursor:not-allowed">
-            <i class="ph ph-hourglass"></i> En cours
-          </button>
-        </div>
+      <div id="review-list">
+        <div class="empty-state">Chargement…</div>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-title">Top signaux · veille 2026-05-15</div>
-
-      <div class="signal-row">
-        <div class="signal-icon">😤</div>
-        <div class="signal-body">
-          <div class="signal-text">« Mon cold email passe pas les filtres spam — 4 outils testés »</div>
-          <div class="signal-footer">
-            <span class="signal-source">reddit · r/saas · watched_high</span>
-            <div class="signal-score">
-              <div class="score-pip on"></div><div class="score-pip on"></div>
-              <div class="score-pip on"></div><div class="score-pip on"></div><div class="score-pip"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="signal-row">
-        <div class="signal-icon">📈</div>
-        <div class="signal-body">
-          <div class="signal-text">#ColdEmail trending +340% FR — volume croissant 48h</div>
-          <div class="signal-footer">
-            <span class="signal-source">trends24 · france · trending</span>
-            <div class="signal-score">
-              <div class="score-pip on"></div><div class="score-pip on"></div>
-              <div class="score-pip on"></div><div class="score-pip on"></div><div class="score-pip on"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="signal-row">
-        <div class="signal-icon">💡</div>
-        <div class="signal-body">
-          <div class="signal-text">Lemlist ≤3★ G2 : « support absent, migration Faly en cours »</div>
-          <div class="signal-footer">
-            <span class="signal-source">g2 · concurrent · opportunité</span>
-            <div class="signal-score">
-              <div class="score-pip on"></div><div class="score-pip on"></div>
-              <div class="score-pip on"></div><div class="score-pip"></div><div class="score-pip"></div>
-            </div>
-          </div>
-        </div>
+      <div class="card-title" id="signals-title">Top signaux · veille</div>
+      <div id="signals-list">
+        <div class="empty-state">Chargement…</div>
       </div>
     </div>
   </div>
@@ -945,127 +803,17 @@ footer {
   <!-- Campagnes récentes -->
   <div class="section">
     <div class="section-eyebrow">Campagnes récentes</div>
-    <div class="grid-3">
-
-      <div class="campaign">
-        <div class="campaign-head">
-          <span class="campaign-canal">LinkedIn</span>
-          <span class="chip chip-review"><span class="chip-dot"></span>Review</span>
-        </div>
-        <div class="campaign-title">5 erreurs qui tuent ton cold email B2B</div>
-        <div class="campaign-excerpt">Le cold email ne meurt pas. Il est mal utilisé. Voici les 5 erreurs que la plupart des founders commettent encore en 2026…</div>
-        <div class="campaign-foot">
-          <span class="campaign-date">15 mai 2026</span>
-          <span style="font-family:var(--font-mono);font-size:10px;color:var(--fg-muted)">CTR estimé : 4.5%</span>
-        </div>
-      </div>
-
-      <div class="campaign">
-        <div class="campaign-head">
-          <span class="campaign-canal">X · Thread</span>
-          <span class="chip chip-done"><span class="chip-dot"></span>Approuvé</span>
-        </div>
-        <div class="campaign-title">Comment Faly a doublé son taux de réponse en 3 semaines</div>
-        <div class="campaign-excerpt">Thread 7 tweets · Angle avant/après · ICP décideurs SaaS Bretagne</div>
-        <div class="campaign-foot">
-          <span class="campaign-date">14 mai 2026</span>
-          <span style="font-family:var(--font-mono);font-size:10px;color:var(--fg-muted)">Publication : 09h00</span>
-        </div>
-      </div>
-
-      <div class="campaign">
-        <div class="campaign-head">
-          <span class="campaign-canal">LinkedIn</span>
-          <span class="chip" style="background:rgba(107,36,24,.1);color:var(--accent)">✦ Publié</span>
-        </div>
-        <div class="campaign-title">Growth hacking ≠ spam — la ligne que peu respectent</div>
-        <div class="campaign-excerpt">892 impressions · 34 likes · 12 reposts · 3 leads directs en DM</div>
-        <div class="campaign-foot">
-          <span class="campaign-date">13 mai 2026</span>
-          <span class="campaign-ctr">CTR : 5.1%</span>
-        </div>
-      </div>
-
+    <div class="grid-3" id="campaigns-grid">
+      <div style="grid-column:1/-1"><div class="empty-state">Chargement…</div></div>
     </div>
   </div>
 
-  <!-- Schedule + Santé agents -->
-  <div class="grid-2 section">
-
-    <div class="card">
-      <div class="card-title">Publication du jour</div>
-
-      <div class="schedule-row">
-        <div class="schedule-time">09h00</div>
-        <div class="schedule-line live"></div>
-        <div>
-          <div class="schedule-name">Thread X — taux de réponse cold email</div>
-          <div class="schedule-canal">x · 7 tweets · Approuvé <i class="ph ph-check-circle" style="color:var(--faly-success)"></i></div>
-        </div>
-      </div>
-
-      <div class="schedule-row">
-        <div class="schedule-time">12h00</div>
-        <div class="schedule-line"></div>
-        <div>
-          <div class="schedule-name">Post LinkedIn — 5 erreurs cold email</div>
-          <div class="schedule-canal">linkedin · en attente review</div>
-        </div>
-      </div>
-
-      <div class="schedule-row">
-        <div class="schedule-time">17h30</div>
-        <div class="schedule-line"></div>
-        <div>
-          <div class="schedule-name">Carousel — outreach B2B</div>
-          <div class="schedule-canal">instagram · review visuel en attente</div>
-        </div>
-      </div>
-    </div>
-
+  <!-- Santé agents -->
+  <div class="section">
     <div class="card">
       <div class="card-title">Santé des agents</div>
-      <div class="health-grid">
-        <div class="health-item">
-          <div class="health-led led-ok"></div>
-          <div class="health-name">OrchestrateurVeille</div>
-          <div class="health-status">OK</div>
-        </div>
-        <div class="health-item">
-          <div class="health-led led-ok"></div>
-          <div class="health-name">Stratège</div>
-          <div class="health-status">OK</div>
-        </div>
-        <div class="health-item">
-          <div class="health-led led-ok"></div>
-          <div class="health-name">Copywriter</div>
-          <div class="health-status">OK</div>
-        </div>
-        <div class="health-item">
-          <div class="health-led led-warn"></div>
-          <div class="health-name">CriticCopy</div>
-          <div class="health-status">Pending</div>
-        </div>
-        <div class="health-item">
-          <div class="health-led led-idle"></div>
-          <div class="health-name">Designer</div>
-          <div class="health-status">Idle</div>
-        </div>
-        <div class="health-item">
-          <div class="health-led led-idle"></div>
-          <div class="health-name">Publisher</div>
-          <div class="health-status">Idle</div>
-        </div>
-        <div class="health-item">
-          <div class="health-led led-ok"></div>
-          <div class="health-name">Analyste</div>
-          <div class="health-status">OK</div>
-        </div>
-        <div class="health-item">
-          <div class="health-led led-ok"></div>
-          <div class="health-name">Guard Hook</div>
-          <div class="health-status">Actif</div>
-        </div>
+      <div class="health-grid" id="health-grid">
+        <!-- rendered by JS -->
       </div>
     </div>
   </div>
@@ -1077,17 +825,247 @@ footer {
 </footer>
 
 <script>
-// Clock
+const DATA_URL = 'data/dashboard.json';
+let _alertCtx = 'copy';
+
+// ── Clock ─────────────────────────────────────────────────
 function tick() {
   const now = new Date();
   document.getElementById('live-time').textContent =
-    now.toLocaleTimeString('fr-FR', {hour:'2-digit',minute:'2-digit',second:'2-digit'});
+    now.toLocaleTimeString('fr-FR', {hour:'2-digit', minute:'2-digit', second:'2-digit'});
   document.getElementById('footer-date').textContent =
     now.toLocaleDateString('fr-FR', {day:'numeric', month:'long', year:'numeric'});
 }
 tick(); setInterval(tick, 1000);
 
-// Approve
+// ── Load data ─────────────────────────────────────────────
+async function loadDashboard() {
+  try {
+    const res = await fetch(DATA_URL + '?t=' + Date.now());
+    if (!res.ok) throw new Error('404');
+    const data = await res.json();
+    render(data);
+  } catch(e) {
+    document.getElementById('sync-badge').textContent = 'mock · sync requis';
+    renderMockState();
+  }
+}
+
+function render(d) {
+  renderAlert(d.alert);
+  renderPipeline(d.pipeline || {});
+  renderKPIs(d.kpis || {});
+  renderReviewQueue(d.review_queue || []);
+  renderSignals(d.signals || []);
+  renderCampaigns(d.campaigns || []);
+  renderHealth(d.agent_health || {});
+  if (d.meta && d.meta.last_updated) {
+    const dt = new Date(d.meta.last_updated);
+    document.getElementById('sync-badge').textContent =
+      'sync ' + dt.toLocaleTimeString('fr-FR', {hour:'2-digit', minute:'2-digit'});
+    document.getElementById('page-date').textContent =
+      'Tableau de bord · ' + dt.toLocaleDateString('fr-FR', {day:'numeric', month:'long', year:'numeric'});
+    const sig = document.getElementById('signals-title');
+    if (sig) sig.textContent = 'Top signaux · veille ' + dt.toLocaleDateString('fr-FR');
+  }
+}
+
+// ── Alert ─────────────────────────────────────────────────
+function renderAlert(alert) {
+  const bar = document.getElementById('alert-bar');
+  if (!alert) { bar.style.display = 'none'; return; }
+  bar.style.display = '';
+  document.getElementById('alert-title').innerHTML =
+    `<i class="ph ph-clock" style="color:var(--faly-warning)"></i> ${alert.title}`;
+  document.getElementById('alert-sub').textContent = alert.sub || '';
+  _alertCtx = alert.context || 'copy';
+  const viewBtn = document.getElementById('alert-view-btn');
+  if (viewBtn) viewBtn.setAttribute('onclick', `openReview('${_alertCtx}')`);
+}
+
+// ── Pipeline ──────────────────────────────────────────────
+const PIPE_DEFS = [
+  {key:'veilleur',      label:'Veilleur',       meta:'reddit · trends24'},
+  {key:'stratege',      label:'Stratège',        meta:'brief généré'},
+  {key:'copywriter',    label:'Copywriter',      meta:'angle A + B'},
+  {key:'copy_review',   label:'Review copy',     meta:'validation humaine'},
+  {key:'critic',        label:'CriticCopy',      meta:'gate qualité'},
+  {key:'designer',      label:'Designer',        meta:'visuels A/B'},
+  {key:'visual_review', label:'Review visuel',   meta:'validation humaine'},
+  {key:'publisher',     label:'Publisher',       meta:'publication'},
+];
+
+const ST = {
+  done:   {cls:'done',    chip:'chip-done',    lbl:'Fait'},
+  review: {cls:'review',  chip:'chip-review',  lbl:'Review'},
+  active: {cls:'active',  chip:'chip-active',  lbl:'En cours'},
+  error:  {cls:'active',  chip:'chip-err',     lbl:'Erreur'},
+  idle:   {cls:'pending', chip:'chip-pending', lbl:'En attente'},
+};
+
+function renderPipeline(pl) {
+  document.getElementById('pipe-steps').innerHTML = PIPE_DEFS.map(s => {
+    const st = ST[pl[s.key]] || ST.idle;
+    return `<div class="pipe-step ${st.cls}">
+      <span class="pipe-name">${s.label}</span>
+      <span class="pipe-meta">${s.meta}</span>
+      <span class="chip ${st.chip}"><span class="chip-dot"></span>${st.lbl}</span>
+    </div>`;
+  }).join('');
+}
+
+// ── KPIs ──────────────────────────────────────────────────
+function renderKPIs(k) {
+  const set = (id, val, fb='—') => {
+    const el = document.getElementById(id);
+    if (el) el.textContent = (val !== null && val !== undefined) ? val : fb;
+  };
+  set('kpi-posts-val',     k.posts_ce_mois);
+  set('kpi-score-val',     k.score_qualite_moyen);
+  set('kpi-review-val',    k.en_attente_review);
+  set('kpi-campagnes-val', k.campagnes_actives);
+  // Score delta color
+  const scoreEl = document.getElementById('kpi-score-val');
+  if (scoreEl && k.score_qualite_moyen !== null && k.score_qualite_moyen !== undefined) {
+    const delta = document.getElementById('kpi-score-delta');
+    if (delta) {
+      if (k.score_qualite_moyen >= 85) {
+        delta.className = 'kpi-delta';
+        delta.textContent = '↑ objectif atteint';
+      } else {
+        delta.className = 'kpi-delta down';
+        delta.textContent = `↓ objectif : 85`;
+      }
+    }
+  }
+  // Review delta color
+  const reviewDelta = document.getElementById('kpi-review-delta');
+  if (reviewDelta && k.en_attente_review > 0) {
+    reviewDelta.className = 'kpi-delta down';
+    reviewDelta.textContent = '↓ action requise';
+  }
+}
+
+// ── Review queue ──────────────────────────────────────────
+function renderReviewQueue(queue) {
+  const el = document.getElementById('review-list');
+  if (!el) return;
+  if (!queue.length) {
+    el.innerHTML = '<div class="empty-state">Aucune validation en attente</div>';
+    return;
+  }
+  el.innerHTML = queue.map(item => `
+    <div class="review-row">
+      <div class="review-info">
+        <div class="review-name">${item.name}</div>
+        <div class="review-meta">${item.meta}</div>
+      </div>
+      <div class="review-actions">
+        <button class="btn btn-approve btn-sm" onclick="approveItem(this)">
+          <i class="ph ph-check"></i> Approuver
+        </button>
+        <button class="btn btn-edit btn-sm" onclick="modifyItem(this,'${item.context}')">
+          <i class="ph ph-pencil-simple"></i> Modifier
+        </button>
+      </div>
+    </div>`).join('');
+}
+
+// ── Signals ───────────────────────────────────────────────
+function renderSignals(signals) {
+  const el = document.getElementById('signals-list');
+  if (!el) return;
+  if (!signals.length) {
+    el.innerHTML = '<div class="empty-state">Aucun signal · lancer une veille</div>';
+    return;
+  }
+  el.innerHTML = signals.map(s => {
+    const score = Math.min(5, Math.max(0, s.score || 3));
+    const pips = Array.from({length:5}, (_,i) =>
+      `<div class="score-pip ${i < score ? 'on' : ''}"></div>`).join('');
+    return `<div class="signal-row">
+      <div class="signal-icon">${s.emoji || '📌'}</div>
+      <div class="signal-body">
+        <div class="signal-text">${s.text}</div>
+        <div class="signal-footer">
+          <span class="signal-source">${s.source}</span>
+          <div class="signal-score">${pips}</div>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ── Campaigns ─────────────────────────────────────────────
+const CHIPS = {
+  review:   '<span class="chip chip-review"><span class="chip-dot"></span>Review</span>',
+  approuvé: '<span class="chip chip-done"><span class="chip-dot"></span>Approuvé</span>',
+  publié:   '<span class="chip" style="background:rgba(107,36,24,.1);color:var(--accent)">✦ Publié</span>',
+};
+
+function renderCampaigns(campaigns) {
+  const el = document.getElementById('campaigns-grid');
+  if (!el) return;
+  if (!campaigns.length) {
+    el.innerHTML = '<div style="grid-column:1/-1"><div class="empty-state">Aucune campagne · pipeline non encore lancé</div></div>';
+    return;
+  }
+  el.innerHTML = [...campaigns].reverse().map(c => {
+    const chip = CHIPS[c.status] || CHIPS.publié;
+    const ctr  = c.ctr ? `<span class="campaign-ctr">CTR : ${c.ctr}%</span>` : '';
+    return `<div class="campaign">
+      <div class="campaign-head">
+        <span class="campaign-canal">${c.canal || '—'}</span>
+        ${chip}
+      </div>
+      <div class="campaign-title">${c.title || '—'}</div>
+      <div class="campaign-excerpt">${c.excerpt || ''}</div>
+      <div class="campaign-foot">
+        <span class="campaign-date">${c.date || ''}</span>
+        ${ctr}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ── Agent health ──────────────────────────────────────────
+const LED = {ok:'led-ok', idle:'led-idle', error:'led-err', warn:'led-warn', pending:'led-warn'};
+const LED_LBL = {ok:'OK', idle:'Idle', error:'Erreur', warn:'Warn', pending:'Pending'};
+
+function renderHealth(health) {
+  const el = document.getElementById('health-grid');
+  if (!el) return;
+  el.innerHTML = Object.entries(health).map(([name, status]) => {
+    const led = LED[status] || 'led-idle';
+    const lbl = LED_LBL[status] || status;
+    return `<div class="health-item">
+      <div class="health-led ${led}"></div>
+      <div class="health-name">${name}</div>
+      <div class="health-status">${lbl}</div>
+    </div>`;
+  }).join('');
+}
+
+// ── Mock state (no data file yet) ────────────────────────
+function renderMockState() {
+  renderPipeline({});
+  renderReviewQueue([]);
+  renderSignals([]);
+  renderCampaigns([]);
+  renderHealth({
+    OrchestrateurVeille:'idle', Stratege:'idle', Copywriter:'idle',
+    CriticCopy:'idle', Designer:'idle', Publisher:'idle',
+    Analyste:'idle', 'Guard Hook':'ok'
+  });
+  document.getElementById('kpi-posts-val').textContent    = '0';
+  document.getElementById('kpi-score-val').textContent    = '—';
+  document.getElementById('kpi-review-val').textContent   = '0';
+  document.getElementById('kpi-campagnes-val').textContent = '0';
+  document.getElementById('page-date').textContent = 'Tableau de bord · ' +
+    new Date().toLocaleDateString('fr-FR', {day:'numeric', month:'long', year:'numeric'});
+}
+
+// ── Actions ───────────────────────────────────────────────
 function approveItem(btn) {
   const row = btn.closest('.review-row');
   btn.innerHTML = '<i class="ph ph-check"></i> Approuvé';
@@ -1099,20 +1077,22 @@ function approveItem(btn) {
   if (editBtn) editBtn.style.display = 'none';
 }
 
-function approveFromBar() { alert('Approve depuis l\'alerte bar → CriticCopy lancé.'); }
+function approveFromBar() {
+  const cmd = _alertCtx === 'copy'
+    ? 'python execution/display_copy.py --slug faly'
+    : 'python execution/display_visual.py --slug faly';
+  alert(`Lance dans le terminal :\n\n${cmd}\n\nPuis sélectionne "Approuver".`);
+}
 
-// Modify
 function modifyItem(btn, ctx) {
   const cmd = `python execution/change_request.py --context ${ctx} --slug faly`;
   alert(`Lance dans le terminal :\n\n${cmd}\n\nDicte tes changements un par un.\nIls seront retenus et transmis à l'agent.`);
 }
 
-// Factory
 function showFactory() {
-  alert('Lance dans le terminal :\n\npython execution/orchestrateur_veille.py --slug faly\n\nOu mode cache-aware avec brief existant.');
+  alert('Lance dans le terminal :\n\npython execution/orchestrateur_veille.py --slug faly');
 }
 
-// Direct post
 function showDirect() {
   const canaux = ['linkedin','x','thread','carousel','email'];
   const canal = prompt('Canal ?\n' + canaux.join(' · '), 'linkedin');
@@ -1121,7 +1101,17 @@ function showDirect() {
   if (!idee) return;
   alert(`Lance dans le terminal :\n\npython execution/direct_brief.py --canal ${canal} --idee "${idee}" --slug faly\n\nEnsuite :\npython execution/copywriter.py --slug faly`);
 }
+
+function openReview(ctx) {
+  const cmd = ctx === 'copy'
+    ? 'python execution/display_copy.py --slug faly'
+    : 'python execution/display_visual.py --slug faly';
+  alert(`Lance dans le terminal :\n\n${cmd}`);
+}
+
+// ── Init ─────────────────────────────────────────────────
+loadDashboard();
+setInterval(loadDashboard, 5 * 60 * 1000);
 </script>
 </body>
-</html>
 </html>
