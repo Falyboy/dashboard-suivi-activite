@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-15T23:44:56.289997+00:00",
+    "last_updated": "2026-05-15T23:53:23.064135+00:00",
     "slug": "faly"
   },
   "current_brief": {
@@ -131,7 +131,7 @@
     "veilleur": "done",
     "stratege": "done",
     "copywriter": "done",
-    "designer": "idle",
+    "designer": "done",
     "publisher": "idle"
   },
   "alert": null,
