@@ -1,31 +1,31 @@
 {
   "meta": {
-    "last_updated": "2026-05-15T21:22:15.605132+00:00",
+    "last_updated": "2026-05-15T21:32:32.168475+00:00",
     "slug": "faly"
   },
   "current_brief": {
     "signal_type": "pain",
     "format": "Carrousel",
-    "accroche": "Timesaver",
+    "accroche": "Le remède",
     "deadline": "2026-05-17",
     "angles": [
       {
         "type": "A",
-        "angle": "This Chinese guy built agents in Claude Code for cold email campaigns and single-handedly serves 38 clients",
+        "angle": "Comment ce système à 7 agents IA scrape LinkedIn et Apollo sans se faire bannir",
         "hashtags": [
           "#GrowthHacking",
           "#LeadGeneration",
-          "#ColdEmail",
+          "#Automatisation",
           "#ScrapingLeads"
         ]
       },
       {
         "type": "B",
-        "angle": "Scaling outreach: From 0 to 38 clients with AI agents — the blueprint",
+        "angle": "J’ai cloné un système d’agents qui gère 38 clients en cold emailing – retour d’expérience",
         "hashtags": [
-          "#GrowthHacking",
-          "#LeadGeneration",
-          "#SalesAutomation",
+          "#SaaS",
+          "#ProspectionB2B",
+          "#IntelligenceArtificielle",
           "#FrenchTechRennes"
         ]
       }
@@ -248,35 +248,35 @@
     },
     "stratege": {
       "brief": {
-        "signal_id": "3",
+        "signal_id": "1",
         "signal_type": "pain",
         "signal_source": "reddit",
         "priority": "watched_high",
-        "deadline": "2026-05-17T21:19:27Z",
+        "deadline": "2026-05-17T21:31:19Z",
         "format_choisi": "Carrousel",
-        "format_justification": "Format idéal pour décomposer visuellement un cas d'usage étape par étape.",
-        "accroche_choisie": "Timesaver",
+        "format_justification": "Un carrousel permet de décomposer visuellement le système à 7 agents, rendant l’automatisation complexe accessible et désirable.",
+        "accroche_choisie": "Le remède",
         "angles": [
           {
             "type": "A",
-            "angle": "This Chinese guy built agents in Claude Code for cold email campaigns and single-handedly serves 38 clients",
-            "brief_copywriter": "Ton direct et chiffré. Structure : stat choc en ouverture (38 clients gérés seul), explication du problème de prospection manuelle, présentation de faly comme solution pour automatiser la création d'agents de prospection, CTA essai gratuit. 150 mots max.",
+            "angle": "Comment ce système à 7 agents IA scrape LinkedIn et Apollo sans se faire bannir",
+            "brief_copywriter": "Ton direct et technique, chiffré. Structure : accroche sur la lenteur de la prospection manuelle, présentation des 3 piliers du système (scraping ciblé, enrichissement, contournement détection), bénéfices (x leads qualifiés, heures sauvées), CTA essai gratuit. 120 mots max.",
             "hashtags": [
               "#GrowthHacking",
               "#LeadGeneration",
-              "#ColdEmail",
+              "#Automatisation",
               "#ScrapingLeads"
             ],
             "kpi_target": "CTR>3%"
           },
           {
             "type": "B",
-            "angle": "Scaling outreach: From 0 to 38 clients with AI agents — the blueprint",
-            "brief_copywriter": "Ton inspirant. Structure : storytelling d'un solo entrepreneur qui a automatisé sa prospection, comparaison avant/après, introduction de faly pour reproduire cette réussite, CTA. 150 mots max.",
+            "angle": "J’ai cloné un système d’agents qui gère 38 clients en cold emailing – retour d’expérience",
+            "brief_copywriter": "Ton immersion et partage d’expérience. Structure : frustration avant (prospection chronophage), découverte du système multi‑agents, mise en œuvre sans développeur, résultats après 30 jours (taux d’ouverture, réponses), pourquoi c’est réplicable, CTA démo. 100 mots max.",
             "hashtags": [
-              "#GrowthHacking",
-              "#LeadGeneration",
-              "#SalesAutomation",
+              "#SaaS",
+              "#ProspectionB2B",
+              "#IntelligenceArtificielle",
               "#FrenchTechRennes"
             ],
             "kpi_target": "CTR>3%"
