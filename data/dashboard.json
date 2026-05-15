@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-15T21:19:23.308176+00:00",
+    "last_updated": "2026-05-15T21:20:38.491164+00:00",
     "slug": "faly"
   },
   "current_brief": {
@@ -11,22 +11,22 @@
     "angles": [
       {
         "type": "A",
-        "angle": "Comment un solopreneur a automatisé ses cold emails avec Claude Code et gère 38 clients seul",
+        "angle": "This Chinese guy built agents in Claude Code for cold email campaigns and single-handedly serves 38 clients",
         "hashtags": [
-          "#ColdEmail",
+          "#GrowthHacking",
           "#LeadGeneration",
-          "#AIAutomation",
+          "#ColdEmail",
           "#ScrapingLeads"
         ]
       },
       {
         "type": "B",
-        "angle": "Le guide étape par étape pour créer un agent de cold email qui gère 38 comptes en pilote automatique",
+        "angle": "Scaling outreach: From 0 to 38 clients with AI agents — the blueprint",
         "hashtags": [
-          "#ColdEmail",
+          "#GrowthHacking",
+          "#LeadGeneration",
           "#SalesAutomation",
-          "#Solopreneur",
-          "#007BFF"
+          "#FrenchTechRennes"
         ]
       }
     ]
@@ -248,36 +248,36 @@
     },
     "stratege": {
       "brief": {
-        "signal_id": "1",
+        "signal_id": "3",
         "signal_type": "pain",
         "signal_source": "reddit",
         "priority": "watched_high",
-        "deadline": "2026-05-17T21:18:15Z",
+        "deadline": "2026-05-17T21:19:27Z",
         "format_choisi": "Carrousel",
-        "format_justification": "Format idéal pour détailler le processus automatisé et les résultats par slide.",
+        "format_justification": "Format idéal pour décomposer visuellement un cas d'usage étape par étape.",
         "accroche_choisie": "Timesaver",
         "angles": [
           {
             "type": "A",
-            "angle": "Comment un solopreneur a automatisé ses cold emails avec Claude Code et gère 38 clients seul",
-            "brief_copywriter": "Ton inspirant et pratique. Structure : Slide 1 - Accroche chiffrée (38 clients gérés seul), Slide 2 - Le problème du cold email manuel, Slide 3 - Présentation de l'agent Claude Code, Slide 4 - Résultats et avantages, Slide 5 - CTA pour tester faly. 80 mots max par slide.",
+            "angle": "This Chinese guy built agents in Claude Code for cold email campaigns and single-handedly serves 38 clients",
+            "brief_copywriter": "Ton direct et chiffré. Structure : stat choc en ouverture (38 clients gérés seul), explication du problème de prospection manuelle, présentation de faly comme solution pour automatiser la création d'agents de prospection, CTA essai gratuit. 150 mots max.",
             "hashtags": [
-              "#ColdEmail",
+              "#GrowthHacking",
               "#LeadGeneration",
-              "#AIAutomation",
+              "#ColdEmail",
               "#ScrapingLeads"
             ],
             "kpi_target": "CTR>3%"
           },
           {
             "type": "B",
-            "angle": "Le guide étape par étape pour créer un agent de cold email qui gère 38 comptes en pilote automatique",
-            "brief_copywriter": "Ton didactique et direct. Structure : Slide 1 - Question choc 'Vous perdez 10h/sem en relances ?', Slide 2 - Étape 1: Configurer l'environnement, Slide 3 - Étape 2: Définir les règles de l'agent, Slide 4 - Étape 3: Suivi et optimisation, Slide 5 - Résultat: 38 clients gérés sans effort. 80 mots max par slide.",
+            "angle": "Scaling outreach: From 0 to 38 clients with AI agents — the blueprint",
+            "brief_copywriter": "Ton inspirant. Structure : storytelling d'un solo entrepreneur qui a automatisé sa prospection, comparaison avant/après, introduction de faly pour reproduire cette réussite, CTA. 150 mots max.",
             "hashtags": [
-              "#ColdEmail",
+              "#GrowthHacking",
+              "#LeadGeneration",
               "#SalesAutomation",
-              "#Solopreneur",
-              "#007BFF"
+              "#FrenchTechRennes"
             ],
             "kpi_target": "CTR>3%"
           }
