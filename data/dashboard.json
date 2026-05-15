@@ -1,7 +1,35 @@
 {
   "meta": {
-    "last_updated": "2026-05-15T20:20:59.338815+00:00",
+    "last_updated": "2026-05-15T20:57:22.697368+00:00",
     "slug": "faly"
+  },
+  "current_brief": {
+    "signal_type": "pain",
+    "format": "Carrousel",
+    "accroche": "Problème→Solution",
+    "deadline": "2026-05-17",
+    "angles": [
+      {
+        "type": "A",
+        "angle": "Un entrepreneur chinois a automatisé ses campagnes email avec des agents IA Claude : il sert 38 clients seul. Voici comment reproduire son succès avec les bons leads.",
+        "hashtags": [
+          "#IA",
+          "#LeadGeneration",
+          "#ColdEmail",
+          "#ScrapingLeads"
+        ]
+      },
+      {
+        "type": "B",
+        "angle": "Arrête de prospecter manuellement. Un solo-entrepreneur a prouvé qu'avec des agents IA et des leads ciblés, on peut servir 38 clients. Découvre comment.",
+        "hashtags": [
+          "#Automatisation",
+          "#LeadGeneration",
+          "#ProspectionB2B",
+          "#ScrapingLeads"
+        ]
+      }
+    ]
   },
   "kpis": {
     "posts_ce_mois": 0,
@@ -10,7 +38,7 @@
     "campagnes_actives": 0
   },
   "pipeline": {
-    "veilleur": "idle",
+    "veilleur": "done",
     "stratege": "done",
     "copywriter": "idle",
     "copy_review": "idle",
@@ -21,7 +49,26 @@
   },
   "alert": null,
   "review_queue": [],
-  "signals": [],
+  "signals": [
+    {
+      "emoji": "📌",
+      "text": "[Final New Update]: TIFU by importing bees to Uruguay + 4-Year Update",
+      "source": "",
+      "score": 5
+    },
+    {
+      "emoji": "📌",
+      "text": "This Chinese guy built agents in Claude Code for cold email campaigns and single-handedly serves 38 ",
+      "source": "",
+      "score": 5
+    },
+    {
+      "emoji": "📌",
+      "text": "AITA for being upset at my girlfriend's reaction after my uncle passed away?",
+      "source": "",
+      "score": 5
+    }
+  ],
   "campaigns": [],
   "agent_health": {
     "OrchestrateurVeille": "idle",
