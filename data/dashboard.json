@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-15T20:57:22.697368+00:00",
+    "last_updated": "2026-05-15T21:03:16.797948+00:00",
     "slug": "faly"
   },
   "current_brief": {
@@ -30,6 +30,260 @@
         ]
       }
     ]
+  },
+  "step_data": {
+    "veilleur": {
+      "signals": [
+        {
+          "category": "pain",
+          "text": "He built a system of 7 agents on Claude Sonnet 4.6 that scrapes LinkedIn and Apollo in narrow verticals, finds B2B companies with broken pipelines, and over 1 weekend takes each one to a finished sample campaign with a personalized Loom and cold message.  \n  \nNo VA, no sales team, no SDR. Just him, ",
+          "source": "",
+          "score": 5,
+          "priority": "watched_high"
+        },
+        {
+          "category": "pain",
+          "text": "Tldr: admissions process for SGporeans applying to irish med schs (via IUMC) is **deeply flawed, opaque** and heavily dependent on factors like **race, socioeconomic background, appearance &amp; one’s ability to ‘fit’ the interviewer’s expectations, rather than being transparently meritocratic**.\n\nh",
+          "source": "",
+          "score": 3,
+          "priority": "watched_high"
+        },
+        {
+          "category": "pain",
+          "text": "Not going to pretend I have it all figured out. But here's what I'd tell 2016-me if I could:\n\n**1. Cold email isn't dead. Your cold email is dead.**\n\nThe \"{{firstName}}, saw you're the {{title}} at {{company}}\" stuff stopped working around 2021. We were sending 8,000 emails a week and getting reply ",
+          "source": "",
+          "score": 2,
+          "priority": "watched_high"
+        },
+        {
+          "category": "trend",
+          "text": "TheeeFlex.",
+          "source": "",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "TheeeFlex.",
+          "source": "",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "Geometry Dash Sunshine Buffed how new players see Sunshine Meme Inspired by: RockyJones ID: in video Instagram: ...",
+          "source": "",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "",
+          "source": "",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "Geometry Dash Meme Inspired by: pukaka830 ID: in video Instagram: https://instagram.com/clementdavv TikTok: ...",
+          "source": "",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "",
+          "source": "",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "Keep up with Me: https://linktr.ee/Relishh (Fortnite Chapter 7 Season 2) ALL WORKING GLITCHES in Fortnite Reload Slurp ...",
+          "source": "",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "LIVE PLAYING SOME GEOMETRY DASH Socials: Tiktok: https://www.tiktok.com/@krypackshorts Insta: ...",
+          "source": "",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "Survive SCARY TRAIN Anomalies in Roblox Join Dash in Roblox!",
+          "source": "",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "Trending #1 sur Trends24",
+          "source": "",
+          "score": 1,
+          "priority": "trending"
+        },
+        {
+          "category": "trend",
+          "text": "Trending #2 sur Trends24",
+          "source": "",
+          "score": 1,
+          "priority": "trending"
+        },
+        {
+          "category": "trend",
+          "text": "Trending #3 sur Trends24",
+          "source": "",
+          "score": 1,
+          "priority": "trending"
+        },
+        {
+          "category": "trend",
+          "text": "Trending #6 sur Trends24",
+          "source": "",
+          "score": 1,
+          "priority": "trending"
+        },
+        {
+          "category": "trend",
+          "text": "Trending #7 sur Trends24",
+          "source": "",
+          "score": 1,
+          "priority": "trending"
+        },
+        {
+          "category": "trend",
+          "text": "Trending #8 sur Trends24",
+          "source": "",
+          "score": 1,
+          "priority": "trending"
+        },
+        {
+          "category": "trend",
+          "text": "Trending #10 sur Trends24",
+          "source": "",
+          "score": 1,
+          "priority": "trending"
+        },
+        {
+          "category": "trend",
+          "text": "Trending #11 sur Trends24",
+          "source": "",
+          "score": 1,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "Trending #12 sur Trends24",
+          "source": "",
+          "score": 1,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "Trending #14 sur Trends24",
+          "source": "",
+          "score": 1,
+          "priority": "normal"
+        },
+        {
+          "category": "educatif",
+          "text": "you might think it's impossible to get @ItsMeGeoGD's cube, but there's actually a secret method to get it yup, this is satire.",
+          "source": "",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "educatif",
+          "text": "**I am NOT OOP. OOP is u/TheEmperorofJenks.**\n\n**Previous [BoRU](https://www.reddit.com/r/BestofRedditorUpdates/s/oN2HFr7666) by garethp** \n\n**[Final New Update]: TIFU by importing bees to Uruguay + 4-Year Update**\n\n**NEW UPDATE MARKED WITH** ----\n \n**Editor's note: please note this is a large BoRU,",
+          "source": "",
+          "score": 5,
+          "priority": "watched_high"
+        },
+        {
+          "category": "educatif",
+          "text": "[1]: https://www.reddit.com/r/AITAH/comments/1lscby7/aita_for_being_upset_at_my_girlfriends_reaction/\n\n[2]: https://www.reddit.com/r/AITAH/comments/1n1i0pw/aita_for_breaking_up_with_my_girlfriend_and/\n\n[3]: https://www.reddit.com/r/Redditor_Updates/comments/1t31hud/update_aitah_for_ending_things_and",
+          "source": "",
+          "score": 5,
+          "priority": "watched_high"
+        },
+        {
+          "category": "educatif",
+          "text": "So many fake posts on here, so I’ve attached the TrustMRR link in the comments   \n feel free to verify it yourself.\n\nThis is my second SaaS. My first one, FrameNet AI, did over $10K in total revenue, and I learned a lot from it   \n mostly what NOT to do. This time, I approached things differently.\n\n",
+          "source": "",
+          "score": 5,
+          "priority": "watched_high"
+        },
+        {
+          "category": "educatif",
+          "text": "So many fake posts on here, so I've attached the TrustedMRR link in the comments. Verify it yourself.\n\nThis is my second SaaS. My first one (FrameNet AI) did over $10K total revenue, and I learned a lot from that mostly about what NOT to do. This time I tried doing it differently.\n\n**Before I even l",
+          "source": "",
+          "score": 5,
+          "priority": "watched_high"
+        },
+        {
+          "category": "educatif",
+          "text": "We interviewed journalist Sacha Biazzo of RAI, Italy’s national public broadcasting network, about his investigation into Italian bon vivant and Trumpworld “envoy” Paolo Zampolli. A few weeks ago, Biazzo conducted a revealing and ultimately contentious sit-down interview in Italian with Zampolli. He",
+          "source": "",
+          "score": 4,
+          "priority": "watched_high"
+        },
+        {
+          "category": "educatif",
+          "text": "I'm not sure if this type of post is allowed on this sub, so [I'm gonna drop the link to the original post in the likelyhood this gets taken down. ](https://www.reddit.com/r/f1driverssnark/comments/1t7l0x3/new_sex_trafficking_connection_found_in_the/?utm_source=share&amp;utm_medium=web3x&amp;utm_nam",
+          "source": "",
+          "score": 3,
+          "priority": "watched_high"
+        },
+        {
+          "category": "educatif",
+          "text": "https://preview.redd.it/yhnh08ag4zzg1.png?width=945&amp;format=png&amp;auto=webp&amp;s=37ac12b8c7e7989db5bc465d644d221cf129269e\n\n[In the email between Ghislaine Maxwell and Tom Pritzker](https://www.justice.gov/epstein/files/DataSet%209/EFTA00582312.pdf) ( discussing the Epstein party that Lawrence ",
+          "source": "",
+          "score": 3,
+          "priority": "watched_high"
+        }
+      ]
+    },
+    "stratege": {
+      "brief": {
+        "signal_id": "1",
+        "signal_type": "pain",
+        "signal_source": "reddit",
+        "priority": "watched_high",
+        "deadline": "2026-05-17T20:48:37.000Z",
+        "format_choisi": "Carrousel",
+        "format_justification": "Signal de douleur avec solution multi-étapes, le Carrousel permet de décomposer visuellement le processus.",
+        "accroche_choisie": "Problème→Solution",
+        "angles": [
+          {
+            "type": "A",
+            "angle": "Un entrepreneur chinois a automatisé ses campagnes email avec des agents IA Claude : il sert 38 clients seul. Voici comment reproduire son succès avec les bons leads.",
+            "brief_copywriter": "Ton direct et chiffré, avec une pointe d'inspiration. Structure : ouverture choc (38 clients), présentation du problème (prospection manuelle longue et inefficace), puis la solution (automatisation IA + faly pour les leads qualifiés), et enfin CTA essai gratuit de faly. Maximum 150 mots.",
+            "hashtags": [
+              "#IA",
+              "#LeadGeneration",
+              "#ColdEmail",
+              "#ScrapingLeads"
+            ],
+            "kpi_target": "CTR>ex >3%"
+          },
+          {
+            "type": "B",
+            "angle": "Arrête de prospecter manuellement. Un solo-entrepreneur a prouvé qu'avec des agents IA et des leads ciblés, on peut servir 38 clients. Découvre comment.",
+            "brief_copywriter": "Ton urgent et pragmatique. Structure : interpellation directe (Arrête...), statistique choc, puis démonstration rapide du combo gagnant (agents IA + données faly), et CTA pour un essai. 120 mots max.",
+            "hashtags": [
+              "#Automatisation",
+              "#LeadGeneration",
+              "#ProspectionB2B",
+              "#ScrapingLeads"
+            ],
+            "kpi_target": "CTR>ex >3%"
+          }
+        ]
+      }
+    }
   },
   "kpis": {
     "posts_ce_mois": 0,
