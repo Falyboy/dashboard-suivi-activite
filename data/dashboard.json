@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-15T21:20:38.491164+00:00",
+    "last_updated": "2026-05-15T21:22:15.605132+00:00",
     "slug": "faly"
   },
   "current_brief": {
@@ -284,7 +284,49 @@
         ]
       }
     },
-    "copywriter": null
+    "copywriter": {
+      "copy": {
+        "angle_A": {
+          "structure_choisie": "persuasive",
+          "raison": "Format carrousel + signal pain : la structure persuasive agite le problème avant de présenter la solution chiffrée.",
+          "contenu": [
+            "38 clients seul. Comment ?",
+            "Prospecter à la main en 2026 ? Franchement... c'est lent, frustrant, et ça ne scale pas.",
+            "Agents IA + leads faly = automatisation. Petit plus : les leads sont ultra-qualifiés.",
+            "D'ailleurs, cet entrepreneur chinois sert 38 clients seul. Juste avec Claude et des bons leads.",
+            "Envie de tester ? 14 jours gratuits, sans engagement. C'est par ici →"
+          ],
+          "cta": "Envie de tester ? 14 jours gratuits, sans engagement. C'est par ici →",
+          "hashtags": [
+            "#IA",
+            "#LeadGeneration",
+            "#ColdEmail",
+            "#ScrapingLeads"
+          ],
+          "kpi_target": "CTR>ex >3%"
+        },
+        "angle_B": {
+          "structure_choisie": "émotionnelle",
+          "raison": "Variante plus directe et urgente : l'émotionnelle crée une identification rapide et une tension qui mène à la révélation du combo gagnant.",
+          "contenu": [
+            "Arrête de prospecter manuellement.",
+            "Tu te reconnais ? Moi aussi, avant... 38 clients seul, je pensais que c'était un mythe.",
+            "Mais un entrepreneur chinois a prouvé le contraire. Agents IA + faly = combo gagnant.",
+            "Depuis, c'est fluide. Et si tu pouvais automatiser sans sacrifier la qualité ?",
+            "Teste faly gratuitement 14 jours. Aucun risque, juste des leads. par ici →"
+          ],
+          "cta": "Teste faly gratuitement 14 jours. Aucun risque, juste des leads. par ici →",
+          "hashtags": [
+            "#Automatisation",
+            "#LeadGeneration",
+            "#ProspectionB2B",
+            "#ScrapingLeads"
+          ],
+          "kpi_target": "CTR>ex >3%"
+        },
+        "next": "Designer"
+      }
+    }
   },
   "kpis": {
     "posts_ce_mois": 0,
@@ -295,7 +337,7 @@
   "pipeline": {
     "veilleur": "done",
     "stratege": "done",
-    "copywriter": "idle",
+    "copywriter": "done",
     "copy_review": "idle",
     "critic": "idle",
     "designer": "idle",
