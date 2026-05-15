@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-15T23:29:08.973855+00:00",
+    "last_updated": "2026-05-15T23:29:46.997768+00:00",
     "slug": "faly"
   },
   "current_brief": {
@@ -94,39 +94,28 @@
     "copywriter": {
       "copy": {
         "angle_A": {
-          "structure_choisie": "persuasive",
-          "raison": "Structure adaptée au signal pain et format carrousel, progressive de l'identification du problème à la solution prouvée.",
-          "contenu": [
-            "Combien d'heures perds-tu en copier-coller ?",
-            "Je l'ai fait. Frustrant, chronophage, et les leads restent tièdes.",
-            "Pire : chaque scrape manuel risque ton compte LinkedIn. La hantise du ban.",
-            "Bref... 7 agents IA scrapent, enrichissent et évitent la détection à ta place.",
-            "D'ailleurs, un client est passé de 3h/jour à 10 min. Sans bannissement. Vérifiable.",
-            "Si ça te parle, 14 jours pour tester. C'est là quand tu veux. 👀"
-          ],
-          "cta": "14 jours pour tester, sans engagement.",
+          "structure_choisie": "simple",
+          "raison": "Format court, signal pain : un hook percutant, valeur immédiate, preuve rapide, CTA léger.",
+          "contenu": "Tu envoies 50 cold emails par jour, t’ouvres à peine 2 réponses ?\n\nLa question c’est pas ton produit… c’est que l’IA détecte le spam en 0.1s.\n\nBref... 95% des boîtes de réception rejettent les templates génériques.\nD’ailleurs, un test récent sur 1200 envois : les emails avec moins de 80 mots et zéro tracking pixel ont eu un taux d’ouverture 3x supérieur.\n\nEt si... on arrêtait de vouloir être trop malin ? Juste une conversation humaine.\n\nPour moi, c’est ça le vrai cold email en 2026.\n\nC’est pour ça que j’ai construit un outil qui applique ces principes en automatique.\n\nSi tu veux tester, c’est par ici → [lien]",
+          "cta": "Si tu veux tester, c’est par ici → [lien]",
           "hashtags": [
-            "#GrowthHacking",
-            "#LeadGeneration",
-            "#Automatisation",
-            "#ScrapingLeads"
+            "#coldemail",
+            "#sales",
+            "#saas"
           ],
-          "kpi_target": "CTR>3%"
+          "kpi_target": "Clics"
         },
         "angle_B": {
-          "structure_choisie": "storytelling",
-          "raison": "Variante narrative pour incarner la douleur et la résolution, avec tension et déclic.",
-          "contenu": [
-            "Peur du ban LinkedIn chaque matin ?",
-            "En 2024, j'ai perdu 3 comptes. 10k contacts envolés.",
-            "Tac tac tac... chaque scrape envoyé, l'angoisse monte. La boule au ventre.",
-            "Déclic : j'ai conçu un mimétisme humain via agents IA. Zéro détection.",
-            "Depuis : 0 ban, 800 leads qualifiés/mois. Des heures sauvées.",
-            "Si tu veux voir le système, je te l'ouvre. Sans engagement. ✨"
+          "structure_choisie": "persuasive",
+          "raison": "Format court, signal opportunite : agite le problème actuel, propose une solution simple, preuve à l’appui.",
+          "contenu": "Et si tes prospects voulaient vraiment recevoir tes emails ?\n\nPas juste les ouvrir… les attendre.\n\nCe matin, j’ai discuté avec Théo, responsable commercial chez ScaleAI.\nIl m’a dit : « Avant, mes emails partaient dans le vide. Aujourd’hui, on me remercie pour mon approche. »\n\nD’ailleurs, le déclic ? On a retiré tous les tracking pixels, réduit les mails à 70 mots, et écrit comme on parle.\nRésultat : 22% de réponse en 2 semaines.\n\nJe ne te dis pas que c’est magique.\nJe te dis juste : si tu en as marre du silence, essaie une autre manière.\n\nC’est là si tu en as besoin → [lien]",
+          "cta": "C’est là si tu en as besoin → [lien]",
+          "hashtags": [
+            "#salesengagement",
+            "#b2b",
+            "#coldoutreach"
           ],
-          "cta": "Si tu veux voir, c'est dispo.",
-          "hashtags": [],
-          "kpi_target": ""
+          "kpi_target": "Conversions"
         },
         "next": "Designer"
       }
