@@ -1,32 +1,32 @@
 {
   "meta": {
-    "last_updated": "2026-05-15T21:03:16.797948+00:00",
+    "last_updated": "2026-05-15T21:19:23.308176+00:00",
     "slug": "faly"
   },
   "current_brief": {
     "signal_type": "pain",
     "format": "Carrousel",
-    "accroche": "Problème→Solution",
+    "accroche": "Timesaver",
     "deadline": "2026-05-17",
     "angles": [
       {
         "type": "A",
-        "angle": "Un entrepreneur chinois a automatisé ses campagnes email avec des agents IA Claude : il sert 38 clients seul. Voici comment reproduire son succès avec les bons leads.",
+        "angle": "Comment un solopreneur a automatisé ses cold emails avec Claude Code et gère 38 clients seul",
         "hashtags": [
-          "#IA",
-          "#LeadGeneration",
           "#ColdEmail",
+          "#LeadGeneration",
+          "#AIAutomation",
           "#ScrapingLeads"
         ]
       },
       {
         "type": "B",
-        "angle": "Arrête de prospecter manuellement. Un solo-entrepreneur a prouvé qu'avec des agents IA et des leads ciblés, on peut servir 38 clients. Découvre comment.",
+        "angle": "Le guide étape par étape pour créer un agent de cold email qui gère 38 comptes en pilote automatique",
         "hashtags": [
-          "#Automatisation",
-          "#LeadGeneration",
-          "#ProspectionB2B",
-          "#ScrapingLeads"
+          "#ColdEmail",
+          "#SalesAutomation",
+          "#Solopreneur",
+          "#007BFF"
         ]
       }
     ]
@@ -252,38 +252,39 @@
         "signal_type": "pain",
         "signal_source": "reddit",
         "priority": "watched_high",
-        "deadline": "2026-05-17T20:48:37.000Z",
+        "deadline": "2026-05-17T21:18:15Z",
         "format_choisi": "Carrousel",
-        "format_justification": "Signal de douleur avec solution multi-étapes, le Carrousel permet de décomposer visuellement le processus.",
-        "accroche_choisie": "Problème→Solution",
+        "format_justification": "Format idéal pour détailler le processus automatisé et les résultats par slide.",
+        "accroche_choisie": "Timesaver",
         "angles": [
           {
             "type": "A",
-            "angle": "Un entrepreneur chinois a automatisé ses campagnes email avec des agents IA Claude : il sert 38 clients seul. Voici comment reproduire son succès avec les bons leads.",
-            "brief_copywriter": "Ton direct et chiffré, avec une pointe d'inspiration. Structure : ouverture choc (38 clients), présentation du problème (prospection manuelle longue et inefficace), puis la solution (automatisation IA + faly pour les leads qualifiés), et enfin CTA essai gratuit de faly. Maximum 150 mots.",
+            "angle": "Comment un solopreneur a automatisé ses cold emails avec Claude Code et gère 38 clients seul",
+            "brief_copywriter": "Ton inspirant et pratique. Structure : Slide 1 - Accroche chiffrée (38 clients gérés seul), Slide 2 - Le problème du cold email manuel, Slide 3 - Présentation de l'agent Claude Code, Slide 4 - Résultats et avantages, Slide 5 - CTA pour tester faly. 80 mots max par slide.",
             "hashtags": [
-              "#IA",
-              "#LeadGeneration",
               "#ColdEmail",
+              "#LeadGeneration",
+              "#AIAutomation",
               "#ScrapingLeads"
             ],
-            "kpi_target": "CTR>ex >3%"
+            "kpi_target": "CTR>3%"
           },
           {
             "type": "B",
-            "angle": "Arrête de prospecter manuellement. Un solo-entrepreneur a prouvé qu'avec des agents IA et des leads ciblés, on peut servir 38 clients. Découvre comment.",
-            "brief_copywriter": "Ton urgent et pragmatique. Structure : interpellation directe (Arrête...), statistique choc, puis démonstration rapide du combo gagnant (agents IA + données faly), et CTA pour un essai. 120 mots max.",
+            "angle": "Le guide étape par étape pour créer un agent de cold email qui gère 38 comptes en pilote automatique",
+            "brief_copywriter": "Ton didactique et direct. Structure : Slide 1 - Question choc 'Vous perdez 10h/sem en relances ?', Slide 2 - Étape 1: Configurer l'environnement, Slide 3 - Étape 2: Définir les règles de l'agent, Slide 4 - Étape 3: Suivi et optimisation, Slide 5 - Résultat: 38 clients gérés sans effort. 80 mots max par slide.",
             "hashtags": [
-              "#Automatisation",
-              "#LeadGeneration",
-              "#ProspectionB2B",
-              "#ScrapingLeads"
+              "#ColdEmail",
+              "#SalesAutomation",
+              "#Solopreneur",
+              "#007BFF"
             ],
-            "kpi_target": "CTR>ex >3%"
+            "kpi_target": "CTR>3%"
           }
         ]
       }
-    }
+    },
+    "copywriter": null
   },
   "kpis": {
     "posts_ce_mois": 0,
