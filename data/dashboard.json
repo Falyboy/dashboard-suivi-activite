@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-15T23:25:42.160660+00:00",
+    "last_updated": "2026-05-15T23:29:08.973855+00:00",
     "slug": "faly"
   },
   "current_brief": {
@@ -95,41 +95,38 @@
       "copy": {
         "angle_A": {
           "structure_choisie": "persuasive",
-          "raison": "Format carrousel + signal pain : la structure persuasive agite le problème avant de présenter la solution chiffrée.",
+          "raison": "Structure adaptée au signal pain et format carrousel, progressive de l'identification du problème à la solution prouvée.",
           "contenu": [
-            "38 clients seul. Comment ?",
-            "Prospecter à la main en 2026 ? Franchement... c'est lent, frustrant, et ça ne scale pas.",
-            "Agents IA + leads faly = automatisation. Petit plus : les leads sont ultra-qualifiés.",
-            "D'ailleurs, cet entrepreneur chinois sert 38 clients seul. Juste avec Claude et des bons leads.",
-            "Envie de tester ? 14 jours gratuits, sans engagement. C'est par ici →"
+            "Combien d'heures perds-tu en copier-coller ?",
+            "Je l'ai fait. Frustrant, chronophage, et les leads restent tièdes.",
+            "Pire : chaque scrape manuel risque ton compte LinkedIn. La hantise du ban.",
+            "Bref... 7 agents IA scrapent, enrichissent et évitent la détection à ta place.",
+            "D'ailleurs, un client est passé de 3h/jour à 10 min. Sans bannissement. Vérifiable.",
+            "Si ça te parle, 14 jours pour tester. C'est là quand tu veux. 👀"
           ],
-          "cta": "Envie de tester ? 14 jours gratuits, sans engagement. C'est par ici →",
+          "cta": "14 jours pour tester, sans engagement.",
           "hashtags": [
-            "#IA",
+            "#GrowthHacking",
             "#LeadGeneration",
-            "#ColdEmail",
+            "#Automatisation",
             "#ScrapingLeads"
           ],
-          "kpi_target": "CTR>ex >3%"
+          "kpi_target": "CTR>3%"
         },
         "angle_B": {
-          "structure_choisie": "émotionnelle",
-          "raison": "Variante plus directe et urgente : l'émotionnelle crée une identification rapide et une tension qui mène à la révélation du combo gagnant.",
+          "structure_choisie": "storytelling",
+          "raison": "Variante narrative pour incarner la douleur et la résolution, avec tension et déclic.",
           "contenu": [
-            "Arrête de prospecter manuellement.",
-            "Tu te reconnais ? Moi aussi, avant... 38 clients seul, je pensais que c'était un mythe.",
-            "Mais un entrepreneur chinois a prouvé le contraire. Agents IA + faly = combo gagnant.",
-            "Depuis, c'est fluide. Et si tu pouvais automatiser sans sacrifier la qualité ?",
-            "Teste faly gratuitement 14 jours. Aucun risque, juste des leads. par ici →"
+            "Peur du ban LinkedIn chaque matin ?",
+            "En 2024, j'ai perdu 3 comptes. 10k contacts envolés.",
+            "Tac tac tac... chaque scrape envoyé, l'angoisse monte. La boule au ventre.",
+            "Déclic : j'ai conçu un mimétisme humain via agents IA. Zéro détection.",
+            "Depuis : 0 ban, 800 leads qualifiés/mois. Des heures sauvées.",
+            "Si tu veux voir le système, je te l'ouvre. Sans engagement. ✨"
           ],
-          "cta": "Teste faly gratuitement 14 jours. Aucun risque, juste des leads. par ici →",
-          "hashtags": [
-            "#Automatisation",
-            "#LeadGeneration",
-            "#ProspectionB2B",
-            "#ScrapingLeads"
-          ],
-          "kpi_target": "CTR>ex >3%"
+          "cta": "Si tu veux voir, c'est dispo.",
+          "hashtags": [],
+          "kpi_target": ""
         },
         "next": "Designer"
       }
