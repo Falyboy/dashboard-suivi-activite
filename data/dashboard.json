@@ -1,42 +1,36 @@
-﻿{
-    "alert":  null,
-    "signals":  [
-
-                ],
-    "meta":  {
-                 "slug":  "faly",
-                 "last_updated":  "2026-05-15T21:53:29Z"
-             },
-    "agent_health":  {
-                         "Designer":  "idle",
-                         "Copywriter":  "idle",
-                         "Guard Hook":  "ok",
-                         "CriticCopy":  "idle",
-                         "Analyste":  "idle",
-                         "OrchestrateurVeille":  "idle",
-                         "Publisher":  "idle",
-                         "Stratege":  "idle"
-                     },
-    "pipeline":  {
-                     "critic":  "idle",
-                     "designer":  "idle",
-                     "visual_review":  "idle",
-                     "veilleur":  "idle",
-                     "copywriter":  "idle",
-                     "copy_review":  "idle",
-                     "publisher":  "idle",
-                     "stratege":  "idle"
-                 },
-    "kpis":  {
-                 "score_qualite_moyen":  null,
-                 "posts_ce_mois":  0,
-                 "en_attente_review":  0,
-                 "campagnes_actives":  0
-             },
-    "review_queue":  [
-
-                     ],
-    "campaigns":  [
-
-                  ]
+{
+  "meta": {
+    "last_updated": "2026-05-15T20:20:59.338815+00:00",
+    "slug": "faly"
+  },
+  "kpis": {
+    "posts_ce_mois": 0,
+    "score_qualite_moyen": null,
+    "en_attente_review": 0,
+    "campagnes_actives": 0
+  },
+  "pipeline": {
+    "veilleur": "idle",
+    "stratege": "done",
+    "copywriter": "idle",
+    "copy_review": "idle",
+    "critic": "idle",
+    "designer": "idle",
+    "visual_review": "idle",
+    "publisher": "idle"
+  },
+  "alert": null,
+  "review_queue": [],
+  "signals": [],
+  "campaigns": [],
+  "agent_health": {
+    "OrchestrateurVeille": "idle",
+    "Stratege": "idle",
+    "Copywriter": "idle",
+    "CriticCopy": "idle",
+    "Designer": "idle",
+    "Publisher": "idle",
+    "Analyste": "idle",
+    "Guard Hook": "ok"
+  }
 }
