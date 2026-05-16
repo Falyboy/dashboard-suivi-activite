@@ -1,125 +1,520 @@
 {
   "meta": {
-    "last_updated": "2026-05-16T11:49:31.221794+00:00",
+    "last_updated": "2026-05-16T16:01:12.374855+00:00",
     "slug": "faly"
   },
-  "current_brief": {
-    "signal_type": "",
-    "format": "",
-    "accroche": "",
-    "deadline": "",
-    "angles": []
-  },
+  "current_brief": null,
   "step_data": {
     "veilleur": {
       "signals": [
         {
           "category": "trend",
           "text": "",
-          "source": "",
-          "score": 2,
-          "priority": "normal"
-        },
-        {
-          "category": "trend",
-          "text": "GEOMETRY DASH #gd #geometrydash.",
-          "source": "",
-          "score": 2,
-          "priority": "normal"
-        },
-        {
-          "category": "trend",
-          "text": "Dash is UNDEFEATED! This video Dash, Cam and Koko play Minecraft, and Dash starts as a noob before turning into OP ...",
-          "source": "",
-          "score": 2,
-          "priority": "normal"
-        },
-        {
-          "category": "trend",
-          "text": "I made a Talking Ginger ( From Talking Tom Hero Dash ) Sprunki OC out of balloon #sprunkioc #diyballoon #incrediboxsprunki ...",
-          "source": "",
-          "score": 2,
-          "priority": "normal"
-        },
-        {
-          "category": "trend",
-          "text": "Random processing sigue siendo un dolor de cabeza ¿Alguno ya logró completarlo? #geometrydash #gd #gdlevels #gaming ...",
-          "source": "",
-          "score": 2,
-          "priority": "normal"
-        },
-        {
-          "category": "trend",
-          "text": "Why Rainbow Dash Has Rainbows ⚡ ‣ If you enjoyed the content, subscribe to the channel! New videos like this every day!",
-          "source": "",
-          "score": 2,
-          "priority": "normal"
-        },
-        {
-          "category": "trend",
-          "text": "The LIVE has started! Welcome! ⚡ LIVE Stumble Guys Block Dash Endless With Extras EU Server Energy, memes and crazy ...",
-          "source": "",
+          "source": "youtube",
           "score": 2,
           "priority": "normal"
         },
         {
           "category": "trend",
           "text": "",
-          "source": "",
+          "source": "youtube",
           "score": 2,
           "priority": "normal"
         },
         {
           "category": "trend",
           "text": "",
-          "source": "",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "The Agentic Dev — Newsletter IA & Dev https://mkc.sh/the-agentic-dev?utm_source=youtube 🖼️ YouThumb.ai — Génère des ...",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "Et si avoir une idée calait désormais plus que savoir coder ?",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "Le Pack Agentic Dev — Builde ton harness Claude Code (gratuit) ...",
+          "source": "youtube",
           "score": 2,
           "priority": "normal"
         },
         {
           "category": "trend",
           "text": "",
-          "source": "",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "Apollo (Unlimited Leads): https://get.apollo.io/ixjl79b95lmr Zapier (Connect everything): https://bit.ly/4dsrzN6 Glaido (voice ...",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "Build agentic systems that run your business: https://skool.com/scrapes Don't miss the next build ...",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "Build agentic systems that run your business: https://skool.com/scrapes Don't miss the next build ...",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "Build agentic systems that run your business: https://skool.com/scrapes Don't miss the next build ...",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "In this video, we fully test the NEW Gemini 3.5 Flash and Pro checkpoints that recently appeared ahead of Google I/O 2026.",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "OpenAI's Codex now supports Ollama directly, which means you can run powerful open-source AI models locally inside one of the ...",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "Anthropic's Downfall? GPT-5.6 is reportedly now in full internal testing, Google's Gemini 3.2 variants are leaking ahead of ...",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "GPT 5.5 full analysis, plus DeepSeek V4 paper highlights, comparisons with Mythos, a vibe-coded game w/ GPT Image 2, and 50 ...",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "Claude Opus 4.7 just dropped, but behind every headline lies a deeper story. From a bonanza of benchmarks, to seeing the fruits ...",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "The model, the mythos, the legend. We have a new best AI model, but not all of us. How good is it, what does it's new offensive ...",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "The example-driven, practical walkthrough of Large Language Models and their growing list of related features, as a new entry to ...",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "This is a general audience deep dive into the Large Language Model (LLM) AI technology that powers ChatGPT and related ...",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "We reproduce the GPT-2 (124M) from scratch. This video covers the whole process: First we build the GPT-2 network, then we ...",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "Check out Ghost: https://b.link/wes-ghost One install command, no waitlist, free up to a terabyte. My Links ➡️ Twitter: ...",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "The latest AI News. Learn about LLMs, Gen AI and get ready for the rollout of AGI. Wes Roth covers the latest happenings in the ...",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "My Links ➡️ Twitter: https://x.com/WesRoth ➡️ AI Newsletter: https://natural20.beehiiv.com/subscribe Want to work with me?",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "Get the free Claude guide:* https://clickhubspot.com/6g6o Summary: Claude has three built-in features that most people never use ...",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "Download The 25 OpenClaw Use Cases eBook https://bit.ly/4aBQwo1 Join My Newsletter for Regular AI Updates ...",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "Follow me ▻ x.com/matthewberman Instagram ▻ https://www.instagram.com/matthewberman_ai Media/Sponsorship Inquiries ...",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "Tell your agents to use this: https://here.now/r/matthewberman Join My Newsletter for Regular AI Updates ...",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "Get the Claude guide:* https://clickhubspot.com/x8zb I go step by step to show how I compare ChatGPT GPT 5.5 and Claude 4.7 ...",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "Get the free AI Agents Guide* https://clickhubspot.com/e3mx ChatGPT recently introduced Workspace Agents, a significant ...",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "Get our Claude Design Guide:* https://clickhubspot.com/isbl I walk through how I use Claude Design to create websites, mobile ...",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "monday.com just dropped AI Agents that handle sprint planning, bug triage, standup summaries, and competitive research — all ...",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "T - Task. What do you actually want AI to do? Be specific here. The more precise you are the better the output. Give it a persona, ...",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "Get your free credits with Manus agent https://manus.im/redeem?c=TH013M16 Free 28-Day AI Sprint Roadmap - pick your ...",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "Free 28-Day AI Sprint Roadmap - pick your goal to get a clear, day-by-day path forward ...",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "",
+          "source": "x",
+          "score": 1,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "@Gsdata5566 What does ‘tied to real user outcomes’ look like for you.\nare teams actually closing that loop or still proxying it with LLM-as-judge?",
+          "source": "x",
+          "score": 1,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "@gutshair pensei que ia cair pra 2M o livieshq podia fazer streaming party pra ajudar né...",
+          "source": "x",
+          "score": 1,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "@zoulinrry Onde esse homem ia achar uma mulher mais linda e talentosa? \nOnde ela ia encontrar um homem mais certinho e romantico? \n\nEles sao PERFEITOS!",
+          "source": "x",
+          "score": 1,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "Dive into Open-Source Generative AI! This comprehensive repo lists LLMs, text-to-image/video/audio, 3D models &amp; more for researchers &amp; developers. https://t.co/d7xKWGqUEi #GenerativeAI #OpenSource #AI #LLM #ML #DeepLearning #AITools",
+          "source": "x",
+          "score": 1,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "@TheRockCasadeP1 Umm .. Hay varios videos.. No creo que todos sean IA… En lo personal, yo no les creo.",
+          "source": "x",
+          "score": 1,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "EEUU autorizó a 10 empresas chinas a comprar chips H200 y el CEO de Nvidia espera un avance decisivo\n\nEl Gobierno de Estados Unidos autorizó a 10 empresas chinas la compra de los chips H200 de Nvidia, considerados el segundo procesador de Inteligencia Artificial (IA) más potente desarrollado por la ",
+          "source": "x",
+          "score": 1,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "No Brasil além de diminuir a torcida ia desfalcar os times",
+          "source": "x",
+          "score": 1,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "@Elias_Cabeza Esto es IA.? 😆😆😆 La misma cara de perrita como la madre tuya. https://t.co/27FBSa1O6t",
+          "source": "x",
+          "score": 1,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "@SinaHartung love this guy...she almost teach or explain things to your in a more simply and real way...not just llm hype",
+          "source": "x",
+          "score": 1,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "“Menyemai Waktu” adalah tentang penyembuhan yang tidak perlu dihebohkan. Ia adalah proses peribadi yang menuntut masa, tersemat rapi di sudut hati, dan terus bernyawa melalui sebuah harapan yang senyap.\nDengarlah jika sudi. 😃\n\nMIffyFlo Picks https://t.co/OuCeR33tgP via @YouTube",
+          "source": "x",
+          "score": 1,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "@isisw1ft aunque es ia, se sabe q Niall y Zayn son los q en mejor estado están y tiene una razón, no son ingleses",
+          "source": "x",
+          "score": 1,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "Hice todos mis parciales de programación en papel y aprendí muchísimo en su momento. Es la mejor forma de que aprendas y no hagas todo con claude/chatgpt, las nuevas generaciones van a ser totalmente inútiles sin la ia jjj",
+          "source": "x",
+          "score": 1,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "Se você coloca um prompt oculto pedindo para o modelo de LLM contestar a sua peça de forma genérica e eu pego o resultado gerado sem notar que é péssimo e vou em frente, o problema não está em você, mas em mim.\n\nOutro ponto: onde está previsto que tentar influenciar a IA que a parte adversa usa é co",
+          "source": "x",
+          "score": 1,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "trs perdana di tribun IA, perdana simulasi seat tuhan pdhl gak setinggi itu",
+          "source": "x",
+          "score": 1,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "El salto suele estar más en la iluminación y en cómo escribes el prompt que en la IA en sí.\n\nDe hecho, fotógrafos de producto ya usaban “escenas falsas” hace años para anuncios de comida rápida porque la foto real se veía peor que la versión construida.\n\nAhora cualquiera lo hace desde el portátil y ",
+          "source": "x",
+          "score": 1,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "@RealityWizard_ \"When you treat an AI like a disposable tool, you get tool behavior.\" - but I only want \"tool behaviour\" from an LLM.  \n\nI turn it on when I want to use it, turn it off when I don't.  Just like a toaster.   \n\nWhen we come up with \"AI\", I might revise that.",
+          "source": "x",
+          "score": 1,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "a quantidade de IA no pinterest me adoece",
+          "source": "x",
+          "score": 1,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "Adversarial collaboration is undervalued. The model isn't always right. But \"sycophant agreeing with you\" and \"colleague pushing back\" are both LLM modes — and the second one is more useful.",
+          "source": "x",
+          "score": 1,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "Sampai dengan acara selesai, akhirnya ia dan sang tuan berjalan kembali ke mobil untuk pulang ke rumah dan beristirahat. “Kalau ngantuk, kita cari hotel deket sini aja ya?” Ujarnya singkat. Sang tuan mengangguk pelan seraya tersenyum tipis.\n\n終わり.",
+          "source": "x",
+          "score": 1,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "I would say that the advent of competent chatbots, fueled by the transformer-based LLM architecture, is a breakthrough that strongly surpasses LSTMs, RNNs etc.\n\nThere are of course the NLP-related translation benchmark tasks and so on, which transformers win at.\n\nBut on a higher level, I would say t",
+          "source": "x",
+          "score": 1,
+          "priority": "normal"
+        },
+        {
+          "category": "trend",
+          "text": "It's never too late to board the train! http://www.backtothefridge.com/all-aboard/",
+          "source": "x",
+          "score": 1,
+          "priority": "watched"
+        },
+        {
+          "category": "trend",
+          "text": "All aboard! http://www.backtothefridge.com/this-train-is-rolling/",
+          "source": "x",
+          "score": 1,
+          "priority": "watched"
+        },
+        {
+          "category": "trend",
+          "text": "For the first time ever, follow *two* weight loss stories by the exact same person simultaneously: http://bit.ly/bOaqwYj  ;)",
+          "source": "x",
+          "score": 1,
+          "priority": "watched"
+        },
+        {
+          "category": "trend",
+          "text": "Finally got my #FitBloggin 10 recap posted before FitBloggin 11: http://bit.ly/d0IySL",
+          "source": "x",
+          "score": 1,
+          "priority": "watched"
+        },
+        {
+          "category": "trend",
+          "text": "Unfortunately, @sheerbalance, we never could figure out who @denisegass was the spitting image of.",
+          "source": "x",
+          "score": 1,
+          "priority": "watched"
+        },
+        {
+          "category": "trend",
+          "text": "All I heard was something about spitting. RT @sheerbalance @denisegass",
+          "source": "x",
+          "score": 1,
+          "priority": "watched"
+        },
+        {
+          "category": "trend",
+          "text": "I feel bad for whining about a cold after reading @amerrylife 's #fitbloggin ordeal.  :(",
+          "source": "x",
+          "score": 1,
+          "priority": "watched"
+        },
+        {
+          "category": "trend",
+          "text": "If #FitBloggin is all about health and wellness, why'd I come home with a cold?  :-(",
+          "source": "x",
+          "score": 1,
+          "priority": "watched"
+        },
+        {
+          "category": "opportunite",
+          "text": "This prompt stops AI from agreeing with everything.\n\nI’ve tested many (this one actually works).\n\nIt teaches AI to stay clear, direct, and honest.\n\nI added clear rules:\n\n“DO NOT agree automatically with user statements.”\n“Challenge weak logic and point out gaps in reasoning.”\n\nAI needs both:\n- Auto-",
+          "source": "linkedin",
+          "score": 3,
+          "priority": "watched_high"
+        },
+        {
+          "category": "opportunite",
+          "text": "How to automate your inbox & calendar with Claude + Zapier in 5 mins\n\n1. Open Zapier MCP.\n2. Create a new MCP server.\n3. Copy the MCP server URL.\n4. Open Claude → Settings → Connectors / Integrations.\n5. Connect Zapier MCP and authorise your account.\n\nBefore you automate anything, connect your apps ",
+          "source": "linkedin",
+          "score": 5,
+          "priority": "watched_high"
+        },
+        {
+          "category": "educatif",
+          "text": "Start a free trial of HubSpot's new AEO tool:* https://clickhubspot.com/iode Summary: A massive shift in consumer behaviour is ...",
+          "source": "youtube",
+          "score": 2,
+          "priority": "normal"
+        },
+        {
+          "category": "educatif",
+          "text": "Get the guide to Master Claude Code:* https://clickhubspot.com/pmk Links Play Cube Tac Toe: https://cube-tac-toe.vercel.app/ ...",
+          "source": "youtube",
           "score": 2,
           "priority": "normal"
         }
       ]
     },
-    "stratege": {
-      "brief": {
-        "warning": "no_signal",
-        "action": "wait_next_veilleur"
-      }
-    },
-    "copywriter": {
-      "copy": {
-        "angle_A": {
-          "structure_choisie": "simple",
-          "raison": "Format court, signal pain : un hook percutant, valeur immédiate, preuve rapide, CTA léger.",
-          "contenu": "Tu envoies 50 cold emails par jour, t’ouvres à peine 2 réponses ?\n\nLa question c’est pas ton produit… c’est que l’IA détecte le spam en 0.1s.\n\nBref... 95% des boîtes de réception rejettent les templates génériques.\nD’ailleurs, un test récent sur 1200 envois : les emails avec moins de 80 mots et zéro tracking pixel ont eu un taux d’ouverture 3x supérieur.\n\nEt si... on arrêtait de vouloir être trop malin ? Juste une conversation humaine.\n\nPour moi, c’est ça le vrai cold email en 2026.\n\nC’est pour ça que j’ai construit un outil qui applique ces principes en automatique.\n\nSi tu veux tester, c’est par ici → [lien]",
-          "cta": "Si tu veux tester, c’est par ici → [lien]",
-          "hashtags": [
-            "#coldemail",
-            "#sales",
-            "#saas"
-          ],
-          "kpi_target": "Clics"
-        },
-        "angle_B": {
-          "structure_choisie": "persuasive",
-          "raison": "Format court, signal opportunite : agite le problème actuel, propose une solution simple, preuve à l’appui.",
-          "contenu": "Et si tes prospects voulaient vraiment recevoir tes emails ?\n\nPas juste les ouvrir… les attendre.\n\nCe matin, j’ai discuté avec Théo, responsable commercial chez ScaleAI.\nIl m’a dit : « Avant, mes emails partaient dans le vide. Aujourd’hui, on me remercie pour mon approche. »\n\nD’ailleurs, le déclic ? On a retiré tous les tracking pixels, réduit les mails à 70 mots, et écrit comme on parle.\nRésultat : 22% de réponse en 2 semaines.\n\nJe ne te dis pas que c’est magique.\nJe te dis juste : si tu en as marre du silence, essaie une autre manière.\n\nC’est là si tu en as besoin → [lien]",
-          "cta": "C’est là si tu en as besoin → [lien]",
-          "hashtags": [
-            "#salesengagement",
-            "#b2b",
-            "#coldoutreach"
-          ],
-          "kpi_target": "Conversions"
-        },
-        "next": "Designer"
-      }
-    }
+    "stratege": null,
+    "copywriter": null
   },
   "kpis": {
     "posts_ce_mois": 0,
@@ -129,9 +524,9 @@
   },
   "pipeline": {
     "veilleur": "done",
-    "stratege": "done",
-    "copywriter": "done",
-    "designer": "done",
+    "stratege": "idle",
+    "copywriter": "idle",
+    "designer": "idle",
     "publisher": "idle"
   },
   "alert": null,
@@ -139,19 +534,19 @@
   "signals": [
     {
       "emoji": "📌",
-      "text": "I made a Talking Ginger ( From Talking Tom Hero Dash ) Sprunki OC out of balloon #diyballoon",
+      "text": "How to automate your inbox & calendar with Claude + Zapier in 5 mins\n\n1. Open Zapier MCP.\n2. Create ",
       "source": "",
-      "score": 2
+      "score": 5
     },
     {
       "emoji": "📌",
-      "text": "🔴LIVE Stumble Guys Block Dash Endless With Extras EU Server",
+      "text": "This prompt stops AI from agreeing with everything.\n\nI’ve tested many (this one actually works).\n\nIt",
       "source": "",
-      "score": 2
+      "score": 3
     },
     {
       "emoji": "📌",
-      "text": "He’s already here! #lego #renny #dash #nexus",
+      "text": "Claude code à monter mon intro",
       "source": "",
       "score": 2
     }
