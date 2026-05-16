@@ -1,32 +1,32 @@
 {
   "meta": {
-    "last_updated": "2026-05-16T16:03:34.846981+00:00",
+    "last_updated": "2026-05-16T16:04:16.358455+00:00",
     "slug": "faly"
   },
   "current_brief": {
     "signal_type": "opportunite",
     "format": "Image CTA",
-    "accroche": "Lead Magnet",
+    "accroche": "Opportunité→Condition→Offre",
     "deadline": "2026-05-18",
     "angles": [
       {
         "type": "A",
-        "angle": "Automatisez votre boîte mail et calendrier en 5 min avec l'IA",
+        "angle": "How to automate your inbox & calendar with Claude + Zapier in 5 mins",
         "hashtags": [
-          "#Productivity",
-          "#Zapier",
-          "#Automatisation",
-          "#007BFF"
+          "#Automation",
+          "#AIProductivity",
+          "#ZapierAutomation",
+          "#FrenchTechRennes"
         ]
       },
       {
         "type": "B",
-        "angle": "Le prompt anti-'Oui' : comment forcer l’IA à vous challenger",
+        "angle": "The AI prompt that ends ‘yes-man’ mode — and automates your tasks with Zapier",
         "hashtags": [
-          "#AI",
-          "#PromptEngineering",
-          "#Productivité",
-          "#28A745"
+          "#Automation",
+          "#AIAssistant",
+          "#ZapierIntegration",
+          "#FrenchTechRennes"
         ]
       }
     ]
@@ -546,32 +546,32 @@
         "signal_type": "opportunite",
         "signal_source": "linkedin",
         "priority": "watched_high",
-        "deadline": "2026-05-18T16:02:47Z",
+        "deadline": "2026-05-18T16:03:30Z",
         "format_choisi": "Image CTA",
-        "format_justification": "Image CTA drivant vers une ressource avancée sur l'automatisation IA.",
-        "accroche_choisie": "Lead Magnet",
+        "format_justification": "Image CTA sur LinkedIn pour un CTA direct vers une ressource ou un essai, maximisant le CTR sur ce type d’offre.",
+        "accroche_choisie": "Opportunité→Condition→Offre",
         "angles": [
           {
             "type": "A",
-            "angle": "Automatisez votre boîte mail et calendrier en 5 min avec l'IA",
-            "brief_copywriter": "Ton direct et pratique. Structure : ouvrir sur le temps gagné, présenter le guide (lead magnet) avec 3 étapes clés, CTA pour télécharger la ressource. 120 mots max.",
+            "angle": "How to automate your inbox & calendar with Claude + Zapier in 5 mins",
+            "brief_copywriter": "Ton pratique et direct. Structure : titre accrocheur promettant l’automatisation en 5 min, sous-titre bénéfice clair, 2-3 points visuels sur l’intégration Claude+Zapier, CTA ‘Télécharger le guide’ ou ‘Essayer gratuitement’. 200 caractères max pour l’image, légende minimale. Points clés : gain de temps, zéro boîte mail, calendrier géré automatiquement.",
             "hashtags": [
-              "#Productivity",
-              "#Zapier",
-              "#Automatisation",
-              "#007BFF"
+              "#Automation",
+              "#AIProductivity",
+              "#ZapierAutomation",
+              "#FrenchTechRennes"
             ],
             "kpi_target": "CTR>3%"
           },
           {
             "type": "B",
-            "angle": "Le prompt anti-'Oui' : comment forcer l’IA à vous challenger",
-            "brief_copywriter": "Ton provocateur. Ouvrir sur le problème des IA trop complaisantes, révéler l'astuce du prompt, proposer une checklist en lead magnet. 100 mots max.",
+            "angle": "The AI prompt that ends ‘yes-man’ mode — and automates your tasks with Zapier",
+            "brief_copywriter": "Ton provocateur mais rassurant. Structure : question sur l’IA trop conciliante, annonce d’un prompt testé qui fonctionne, lien avec l’automatisation via Zapier, CTA pour obtenir le prompt. 200 caractères max. Points clés : problème de l’IA complaisante, solution validée, application immédiate pour vider la boîte mail.",
             "hashtags": [
-              "#AI",
-              "#PromptEngineering",
-              "#Productivité",
-              "#28A745"
+              "#Automation",
+              "#AIAssistant",
+              "#ZapierIntegration",
+              "#FrenchTechRennes"
             ],
             "kpi_target": "CTR>3%"
           }
