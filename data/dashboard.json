@@ -1,9 +1,36 @@
 {
   "meta": {
-    "last_updated": "2026-05-16T16:01:12.374855+00:00",
+    "last_updated": "2026-05-16T16:03:34.846981+00:00",
     "slug": "faly"
   },
-  "current_brief": null,
+  "current_brief": {
+    "signal_type": "opportunite",
+    "format": "Image CTA",
+    "accroche": "Lead Magnet",
+    "deadline": "2026-05-18",
+    "angles": [
+      {
+        "type": "A",
+        "angle": "Automatisez votre boîte mail et calendrier en 5 min avec l'IA",
+        "hashtags": [
+          "#Productivity",
+          "#Zapier",
+          "#Automatisation",
+          "#007BFF"
+        ]
+      },
+      {
+        "type": "B",
+        "angle": "Le prompt anti-'Oui' : comment forcer l’IA à vous challenger",
+        "hashtags": [
+          "#AI",
+          "#PromptEngineering",
+          "#Productivité",
+          "#28A745"
+        ]
+      }
+    ]
+  },
   "step_data": {
     "veilleur": {
       "signals": [
@@ -513,7 +540,44 @@
         }
       ]
     },
-    "stratege": null,
+    "stratege": {
+      "brief": {
+        "signal_id": "1",
+        "signal_type": "opportunite",
+        "signal_source": "linkedin",
+        "priority": "watched_high",
+        "deadline": "2026-05-18T16:02:47Z",
+        "format_choisi": "Image CTA",
+        "format_justification": "Image CTA drivant vers une ressource avancée sur l'automatisation IA.",
+        "accroche_choisie": "Lead Magnet",
+        "angles": [
+          {
+            "type": "A",
+            "angle": "Automatisez votre boîte mail et calendrier en 5 min avec l'IA",
+            "brief_copywriter": "Ton direct et pratique. Structure : ouvrir sur le temps gagné, présenter le guide (lead magnet) avec 3 étapes clés, CTA pour télécharger la ressource. 120 mots max.",
+            "hashtags": [
+              "#Productivity",
+              "#Zapier",
+              "#Automatisation",
+              "#007BFF"
+            ],
+            "kpi_target": "CTR>3%"
+          },
+          {
+            "type": "B",
+            "angle": "Le prompt anti-'Oui' : comment forcer l’IA à vous challenger",
+            "brief_copywriter": "Ton provocateur. Ouvrir sur le problème des IA trop complaisantes, révéler l'astuce du prompt, proposer une checklist en lead magnet. 100 mots max.",
+            "hashtags": [
+              "#AI",
+              "#PromptEngineering",
+              "#Productivité",
+              "#28A745"
+            ],
+            "kpi_target": "CTR>3%"
+          }
+        ]
+      }
+    },
     "copywriter": null
   },
   "kpis": {
@@ -524,7 +588,7 @@
   },
   "pipeline": {
     "veilleur": "done",
-    "stratege": "idle",
+    "stratege": "done",
     "copywriter": "idle",
     "designer": "idle",
     "publisher": "idle"
