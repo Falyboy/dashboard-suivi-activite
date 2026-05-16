@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-05-16T16:04:16.358455+00:00",
+    "last_updated": "2026-05-16T16:06:04.861534+00:00",
     "slug": "faly"
   },
   "current_brief": {
@@ -578,7 +578,37 @@
         ]
       }
     },
-    "copywriter": null
+    "copywriter": {
+      "copy": {
+        "angle_A": {
+          "structure_choisie": "simple",
+          "raison": "Format court et signal opportunité, la structure simple (Hook → Value → Proof → CTA) permet de délivrer la promesse de gain de temps rapidement sans friction.",
+          "contenu": "Tu passes combien de temps à classer tes mails et organiser ton calendrier ? Franchement, si c’est plus de 30 minutes par jour...\n\nBref, j’ai préparé un guide minimaliste pour automatiser ça en 5 minutes avec l’IA (Zapier + ChatGPT).\n\nD’ailleurs, les 3 étapes sont tellement simples que tu n’as pas besoin d’être tech :\n\n1. Connecter tes comptes en 2 clics\n2. Copier-coller un prompt testé par mes soins\n3. Activer le zap et regarder ta boîte se ranger toute seule\n\nEt si... et si la semaine prochaine tu démarrais avec un bureau numérique déjà rangé ?\n\nC’est juste un PDF de 3 pages. Si ça te dit, c’est par ici →",
+          "cta": "Télécharger le guide",
+          "hashtags": [
+            "#Productivity",
+            "#Zapier",
+            "#Automatisation",
+            "#007BFF"
+          ],
+          "kpi_target": "CTR>3%"
+        },
+        "angle_B": {
+          "structure_choisie": "persuasive",
+          "raison": "Signal opportunité et format court, la structure persuasive crée une agitation rapide avant de proposer la solution, adaptée au ton provocateur pour challenger les croyances sur l’IA.",
+          "contenu": "Tu as déjà demandé un avis à ChatGPT et reçu un « c’est génial ! » qui ne t’avance à rien ? Moi aussi.\n\nBref, j’ai mis au point un prompt qui le force à challenger mes idées. Depuis, j’économise des heures de débat en interne. D’ailleurs, une amie graphiste l’a testé : elle a revu toute sa charte en 20 minutes.\n\nLe secret ? 3 règles simples dans le cadrage. Et si l’IA devenait ton critique le plus exigeant plutôt que ton miroir complaisant ?\n\nC’est juste une checklist PDF. Si t’as envie d’essayer, c’est par ici →",
+          "cta": "Télécharger la checklist",
+          "hashtags": [
+            "#AI",
+            "#PromptEngineering",
+            "#Productivité",
+            "#28A745"
+          ],
+          "kpi_target": "CTR>3%"
+        },
+        "next": "Designer"
+      }
+    }
   },
   "kpis": {
     "posts_ce_mois": 0,
@@ -589,7 +619,7 @@
   "pipeline": {
     "veilleur": "done",
     "stratege": "done",
-    "copywriter": "idle",
+    "copywriter": "done",
     "designer": "idle",
     "publisher": "idle"
   },
